@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Bioinformatics</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            padding: 20px;
+            text-align: center;
+        }
+        .search-bar {
+            text-align: center;
+            margin-bottom: 10px; /* Decreased margin */
+            border:black;
+            border-radius: 20px; /* Rounded corners */
+            padding: 10px; /* Increase padding for larger size */
+            background-color: transparent;
+            color: #333;
+            height: 20px;
+            width: 100%;
+        }
+        .search-bar input[type="text"] {
+             padding: 10px; /* Adjust padding as needed */
+            font-size: 16px; /* Adjust font size as needed */
+             width: 400px; /* Adjust width as needed */
+             height: 25px;
+             background-color: black;
+             color: white;
+             border-radius: 20px;
+             text-align: center;
+             border:1px white;
+        }
+        .search-bar input::placeholder{
+            font-size: 18px;
+            color: rgb(171, 171, 171);
+        }
+        .service-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .service-box {
+            border: 1px solid #333;
+            border-radius: 10px; /* Rounded corners */
+            padding: 20px;
+            margin: 10px;
+            width: 200px;
+            text-align: center;
+            background-color: rgb(33, 32, 32); /* Initial background color */
+            color: white; /* Initial font color */
+            transition: transform 0.3s ease-in-out; /* Movement effect */
+            cursor: pointer;
+        }
+        .service-box:hover {
+            background-color: rgb(14, 132, 14); /* Hover background color */
+            color: black; /* Hover font color */
+            transform: translateY(-5px); /* Move up on hover */
+        }
+        .service-box .click-button {
+            display: inline-block;
+            padding: 8px 16px;
+            margin-top: 10px;
+            border: 2px solid black;
+            border-radius: 5px;
+            color: white; /* Initial button color */
+            text-decoration: none;
+            transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+            background-color: rgb(14, 132, 14);
+        }
+        .service-box:hover .click-button {
+            background-color: black; /* Hover button background color */
+            color: white; /* Hover button font color */
+            border-color: black; /* Hover button border color */
+        }
+        .service-box:active .click-button {
+            background-color: rgb(8, 99, 8); /* Clicked button background color */
+            border-color: rgb(8, 99, 8); /* Clicked button border color */
+        }
+    </style>
+    <script>
+        function searchServices() {
+            var input = document.getElementById('searchInput').value.toLowerCase();
+            var boxes = document.getElementsByClassName('service-box');
+
+            for (var i = 0; i < boxes.length; i++) {
+                var title = boxes[i].getElementsByTagName('h3')[0].innerText.toLowerCase();
+                if (title.includes(input)) {
+                    boxes[i].style.display = 'block';
+                } else {
+                    boxes[i].style.display = 'none';
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>SERVICES</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div class="content">
+        <div class="search-bar">
+            <input type="text" id="searchInput" onkeyup="searchServices()" placeholder="SEARCH FOR DISEASES ...">
+        </div><br>
+        <div class="service-grid">
+            <!-- Example service box -->
+            <div class="service-box">
+                <h3>ONE</h3>
+                <a href="ONE.HTML" class="click-button">READ MORE</a>
+            </div>
+            <div class="service-box">
+                <h3>TWO</h3>
+                <a href="TWO.HTML" class="click-button">READ MORE</a>
+            </div>
+            <div class="service-box">
+                <h3>THREE</h3>
+                <a href="THREE.HTML" class="click-button">READ MORE</a>
+            </div>
+            <div class="service-box">
+                <h3>FOUR</h3>
+                <a href="FOUR.HTML" class="click-button">READ MORE</a>
+            </div>
+            <div class="service-box">
+                <h3>FIVE</h3>
+                <a href="FIVE.HTML" class="click-button">READ MORE</a>
+            </div>
+            <div class="service-box">
+                <h3>SIX</h3>
+                <a href="SIX.HTML" class="click-button">READ MORE</a>
+            </div>
+            <div class="service-box">
+                <h3>SEVEN</h3>
+                <a href="SEVEN.HTML" class="click-button">READ MORE</a>
+            </div>
+            <div class="service-box">
+                <h3>EIGHT</h3>
+                <a href="EIGHT.HTML" class="click-button">READ MORE</a>
+            </div>
+            <div class="service-box">
+                <h3>NINE</h3>
+                <a href="NINE.HTML" class="click-button">READ MORE</a>
+            </div>
+            <div class="service-box">
+                <h3>TEN</h3>
+                <a href="TEN.HTML" class="click-button">READ MORE</a>
+            </div>
+            <div class="service-box">
+                <h3>ELEVEN</h3>
+                <a href="ELEVEN.HTML" class="click-button">READ MORE</a>
+            </div>
+            <div class="service-box">
+                <h3>TWELVE</h3>
+                <a href="TWELVE.HTML" class="click-button">READ MORE</a>
+            </div>
+            <div class="service-box">
+                <h3>THIRTEEN</h3>
+                <a href="THIRTEEN.HTML" class="click-button">READ MORE</a>
+            </div>
+            <div class="service-box">
+                <h3>FOURTEEN</h3>
+                <a href="FORTEEN.HTML" class="click-button">READ MORE</a>
+            </div>
+            <div class="service-box">
+                <h3>FIFTEEN</h3>
+                <a href="FIFTEEN.HTML" class="click-button">READ MORE</a>
+            </div>
+            <div class="service-box">
+                <h3>SIXTEEN</h3>
+                <a href="SIXTEEN.HTML" class="click-button">READ MORE</a>
+            </div>
+            <div class="service-box">
+                <h3>SEVENTEEN</h3>
+                <a href="SEVENTEEN.HTML" class="click-button">READ MORE</a>
+            </div>
+            <div class="service-box">
+                <h3>EIGHTEEN</h3>
+                <a href="EIGHTEEN.HTML" class="click-button">READ MORE</a>
+            </div>
+            <div class="service-box">
+                <h3>NINETEEN</h3>
+                <a href="NINTEEN.HTML" class="click-button">READ MORE</a>
+            </div>
+            <div class="service-box">
+                <h3>TWENTY</h3>
+                <a href="TWENTY.HTML" class="click-button">READ MORE</a>
+            </div>
+            <div class="service-box">
+                <h3>TWENTYONE</h3>
+                <a href="TWNETYONE.HTML" class="click-button">READ MORE</a>
+            </div>
+            <div class="service-box">
+                <h3>TWENTYTWO</h3>
+                <a href="TWENTYTWO.HTML" class="click-button">READ MORE</a>
+            </div>
+            <div class="service-box">
+                <h3>TWENTYTHREE</h3>
+                <a href="TWENTYTHREE.HTML" class="click-button">READ MORE</a>
+            </div>
+            <div class="service-box">
+                <h3>TWENTYFOUR</h3>
+                <a href="TWENTYFOUR.HTML" class="click-button">READ MORE</a>
+            </div>
+           
+            <!-- Add more boxes as needed -->
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Bioinformatics Inc.</p>
+    </footer>
+</body>
+</html>

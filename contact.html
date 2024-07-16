@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT US </title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+       /* Add CSS styles for navigation and contact section */
+
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #0a99c5;
+    text-align: center;
+    padding: 20px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #333; /* Dark background color */
+    padding: 10px 0; /* Padding for space around links */
+    text-align: center; /* Center align text */
+    margin-top: 120px;
+    }
+
+    nav a {
+       color: white; /* Font color for links */
+       text-decoration: none; /* Remove default underline */
+      padding: 14px 20px; /* Padding inside links */
+      text-align: center;
+      margin: 0 10px; /* Margin between links */
+      border-radius: 5px; /* Rounded corners */
+     transition: background-color 0.3s, color 0.3s; /* Smooth transition for color change */
+        }
+
+    nav a:hover {
+    background-color: rgb(14, 132, 14); /* Darker background on hover */
+    color: #fff; /* White font color on hover */
+    }
+
+.content {
+    padding: 20px;
+}
+
+/* Contact section styles */
+#contact {
+    background-color: #333;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#contact h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+}
+
+#contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contact label {
+    display: block;
+    margin-bottom: 8px;
+    color: white;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#contact textarea {
+    resize: vertical;
+}
+
+#contact button {
+    background-color:#0056b3;
+    color: black;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    font-weight: bold;
+}
+
+#contact button:hover {
+    background-color: rgb(14, 132, 14);
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CONTACT US</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div class="content">
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Bioinformatics Inc</p>
+    </footer>
+</body>
+</html>

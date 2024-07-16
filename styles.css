@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1f1f1f;
+    color: #E0E0E0;
+    background-image: url(''); /* Replace 'background.jpg' with your image path */
+    background-size: cover;
+    background-position: right;
+    background-attachment: fixed;
+    background-image:url("images/dna.jpg");
+}
+header {
+    background-color: #333;
+    color: #0a99c5;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    font-weight: bolder;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #333; /* Dark background color */
+    padding: 10px 0; /* Padding for space around links */
+    text-align: center; /* Center align text */
+    margin-top: 120px;
+    font-weight: 700;
+    }
+
+    nav a {
+       color: white; /* Font color for links */
+       text-decoration: none; /* Remove default underline */
+      padding: 14px 20px; /* Padding inside links */
+      text-align: center;
+      margin: 0 10px; /* Margin between links */
+      border-radius: 5px; /* Rounded corners */
+     transition: background-color 0.3s, color 0.3s; /* Smooth transition for color change */
+        }
+
+    nav a:hover {
+    background-color: rgb(14, 132, 14); /* Darker background on hover */
+    color: #fff; /* White font color on hover */
+    }
+
+.content {
+    padding: 20px 20px 20px 20px;
+    background-color: rgba(18, 18, 18, 0.8);
+    line-height: normal;
+    font-size: large;
+}
+.content.main-description{
+    font-size: large;
+}
+
+footer {
+    background-color: rgba(51, 51, 51, 0.8);
+    color: #E0E0E0;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.main-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.main-description {
+    font-size: 18px;
+}
